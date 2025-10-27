@@ -300,17 +300,17 @@ public class DoublyLinkedList<T> where T : IComparable<T>
         return modas;
     }
 
-    public void ShowModa()
+    public string ShowModa()
     {
       
         var modas = GetModa();
         if (modas.Count == 0)
         {
-            Console.WriteLine("No moda found.");
+            return "No moda found.";
         }
         else
         {
-            Console.WriteLine("Moda(s): " + string.Join(", ", modas));
+            return "Moda(s): " + string.Join(", ", modas);
         }
     }
 

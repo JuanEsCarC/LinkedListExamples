@@ -40,7 +40,7 @@ do
             Console.WriteLine();
             break;
         case "5":
-            list.ShowModa();
+            Console.WriteLine(list.ShowModa());
             break;
         case "6":
             list.SortAscending();
@@ -82,6 +82,7 @@ do
 string Menu()
 {
     Console.WriteLine();
+    Console.WriteLine("Option Menu");
     Console.WriteLine("1. Add");
     Console.WriteLine("2. Show list forward");
     Console.WriteLine("3. Show list backward");
@@ -92,6 +93,7 @@ string Menu()
     Console.WriteLine("8. Delete a concurrency");
     Console.WriteLine("9. Delete all concurrency");
     Console.WriteLine("0. Exit");
+    Console.WriteLine();
     Console.Write("Enter your option: ");
     return Console.ReadLine()!;
 }
